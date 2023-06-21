@@ -27,7 +27,7 @@ label_dfs = de['prices']
 features_dfs = de['raw_data']
 
 fe = FeatureEngineering(start, end, beta_window, study_scope)
-studies = fe.run('label_dfs', 'features_dfs')
+studies = fe.run(label_dfs, features_dfs)
 
 for study_name, study_feature_set in studies.items():
     XAI(study_name, study_feature_set['df_x'], study_feature_set['df_y']).fit()
