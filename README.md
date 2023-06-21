@@ -17,7 +17,7 @@ The source code presented in this project has been written by Refinitiv only fo
 To execute any workbook, refer to the following:
 
 - A Refinitiv Desktop license (Refinitiv Eikon or Refinitiv Workspace) that has API access. 
-- Tested with Python 3.7.13.
+- Tested with Python 3.9.
 - RD Library for Python installation:  '**pip install refinitiv-data**'.
 - The necessary python packages as described in the article.
 
