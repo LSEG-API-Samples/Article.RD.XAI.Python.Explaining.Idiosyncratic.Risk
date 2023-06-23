@@ -6,7 +6,7 @@ No investment is free of all possible market risks, even the safest investments 
 
 In this prototype we use the Single Index Model to generate a target variable mimicking idiosyncratic risk. We then write a self-explainable AI model that can rank company idiosyncratic risk.
 
-Details and concepts are further explained in the [Idiosyncratic risk ranking using eXplainable AI]().
+Details and concepts are further explained in the [Idiosyncratic risk ranking using eXplainable AI](https://developers.refinitiv.com/en/article-catalog/article/idiosyncratic_risk_ranking_using_eXplainable_AI).
 ## <a id="disclaimer"></a>Disclaimer
 The source code presented in this project has been written by Refinitiv only for the purpose of illustrating the concepts of creating example scenarios using the Refinitiv Data Library for Python.
 
