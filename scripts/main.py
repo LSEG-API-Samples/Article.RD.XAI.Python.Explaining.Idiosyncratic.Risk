@@ -7,7 +7,7 @@ from datetime import date
 from dateutil.relativedelta import relativedelta
 from FeatureEngineering import FeatureEngineering
 from DataEngineering import DataEngineering
-from mna import XAI
+from ModelingEvaluation import XAI
 
 tf.keras.backend.set_floatx('float64')
 
