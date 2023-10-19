@@ -1,11 +1,11 @@
 import refinitiv.data as rd
-from refinitiv.data.content import news
-from refinitiv.data.content import esg
+import numpy as np
 import pandas as pd
 import datetime
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
-
+from refinitiv.data.content import news
+from refinitiv.data.content import esg
 
 class DataEngineering:
     def __init__(self, assets, start, end, window) -> None:
@@ -135,6 +135,8 @@ class DataEngineering:
     def reshape_data(self, df):
         df = df.stack(
             level=0).reset_index().rename(columns={"level_1": "Instrument"})
+        df = df.replace(r'^\s*$', np.nan, regex=True)
         df_reshaped = pd.pivot_table(
             df,  index=['Instrument', 'Date']).reset_index()
         return df_reshaped
+
